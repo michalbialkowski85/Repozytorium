@@ -1,0 +1,333 @@
+
+html,body{
+
+	
+height: 100%;
+	width: 100%;
+	background-image: url(img/cyberpunk-street.png);
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	z-index: 90;
+}
+
+.nes-container.with-title > .title {
+	display: table;
+	padding: 0 .5rem;
+	margin: -2rem 0 1rem;
+	font-size: 1rem;
+	background-color: #fff;
+}
+
+.nes-container.with-title {
+	padding-top: 4rem;
+	background-color: black;
+}
+
+/*dolna czesc pod menu*/
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:700italic);
+
+* {
+	@include box-sizing(border-box);
+}
+
+p {
+	padding: 2em 2rem;
+	text-align: center;
+}
+
+.atari {
+	font-family: 'press start 2p';
+	font-size: 3.5rem;
+	background: #1e1e28;
+	color: rgba(255, 255, 255, 0.9);
+	text-shadow: 0 0.1em 0 #000;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…Igd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g);
+	background-size: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+	background-repeat: repeat;
+	background-size: 20px 10px;
+	margin-top: 1px;
+}
+
+.game {
+	background-size: 100%;
+	display: inline;
+	
+}
+.pacman {
+	top: 50%;
+	position: absolute;
+}
+
+.game,
+.pacman,
+.pacman > div {
+	position: absolute;
+}
+
+.game {
+	-webkit-transform: translate(-50%, -50%)
+}
+
+.dot,
+.pacman,
+.social-links {
+	-webkit-transform: translateY(-50%)
+}
+
+.pacman-top {
+	-webkit-animation: spinTop .5s infinite linear
+}
+
+.pacman-bottom {
+	-webkit-animation: spinBottom .5s infinite linear
+}
+
+.dot {
+	-webkit-animation: dot 8s infinite linear
+}
+
+.dot:nth-child(2) {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s
+}
+
+.dot:nth-child(3) {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s
+}
+
+.dot:nth-child(4) {
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s
+}
+
+.dot:nth-child(5) {
+	-webkit-animation-delay: 4s;
+	animation-delay: 4s
+}
+
+.dot:nth-child(6) {
+	-webkit-animation-delay: 5s;
+	animation-delay: 5s
+}
+
+.dot:nth-child(7) {
+	-webkit-animation-delay: 6s;
+	animation-delay: 6s
+}
+
+.dot:nth-child(8) {
+	-webkit-animation-delay: 7s;
+	animation-delay: 7s
+}
+
+.dot:nth-child(9) {
+	-webkit-animation-delay: 8s;
+	animation-delay: 8s
+}
+
+@-webkit-keyframes spinTop {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0)
+	}
+
+	50% {
+		-webkit-transform: rotate(-35deg);
+		transform: rotate(-35deg)
+	}
+}
+
+@keyframes spinTop {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0)
+	}
+
+	50% {
+		-webkit-transform: rotate(-35deg);
+		transform: rotate(-35deg)
+	}
+}
+
+@-webkit-keyframes spinBottom {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0)
+	}
+
+	50% {
+		-webkit-transform: rotate(35deg);
+		transform: rotate(35deg)
+	}
+}
+
+@keyframes spinBottom {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0)
+	}
+
+	50% {
+		-webkit-transform: rotate(35deg);
+		transform: rotate(35deg)
+	}
+}
+
+@-webkit-keyframes dot {
+	0% {
+		right: 0
+	}
+
+	90% {
+		opacity: 1
+	}
+
+	95% {
+		opacity: 0
+	}
+
+	100% {
+		right: 100%;
+		opacity: 0
+	}
+}
+
+.game {
+	
+	transform: translate(-50%, -50%);
+	height: 24%;
+	
+	width: 88%;
+	border-top: solid 5px #00f;
+	border-bottom: solid 5px #00f;
+	padding: 30px 0;
+	overflow: hidden;
+	
+	background-color: black;
+}
+
+.pacman {
+	width: 150px;
+	height: 150px;
+	transform: translateY(-50%);
+	background: 0 0;
+	z-index: 1
+}
+
+.pacman > div {
+	background-color: #ff0;
+	height: 50%;
+	width: 100%
+}
+
+.pacman-top {
+	top: 0;
+	border-radius: 100px 100px 0 0;
+	animation: spinTop .5s infinite linear
+}
+
+.dot,
+.social-links {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%)
+}
+
+.pacman-bottom {
+	bottom: 0;
+	border-radius: 0 0 100px 100px;
+	animation: spinBottom .5s infinite linear
+}
+
+.dot {
+
+
+	border-radius: 70%;
+	right: -80px;
+	animation: dot 10s infinite linear
+}
+
+@keyframes spinTop {
+	0% {
+		transform: rotate(0)
+	}
+
+	50% {
+		transform: rotate(-35deg)
+	}
+}
+
+@keyframes spinBottom {
+	0% {
+		transform: rotate(0)
+	}
+
+	50% {
+		transform: rotate(35deg)
+	}
+}
+
+@keyframes dot {
+	0% {
+		right: 10;
+		opacity: 0;
+	}
+
+	90% {
+		opacity: 1;
+	}
+
+	95% {
+		opacity: 0;
+	}
+
+	100% {
+		right: 100%;
+		opacity: 0;
+	}
+}
+
+
+
+@media only screen and (min-width: 640px) and (max-width: 719px) {
+	.atari {
+		font-family: 'press start 2p';
+		font-size: 1.5rem;
+		background: #1e1e28;
+		color: rgba(255, 255, 255, 0.9);
+		text-shadow: 0 0.1em 0 #000;
+		background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…Igd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g);
+		background-size: 100%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+		background-repeat: repeat;
+		background-size: 20px 10px;
+		margin-top: 1px;
+	}
+}
+
+@media only screen and (min-width: 400px) and (max-width:640px) {
+	.atari {
+		font-family: 'press start 2p';
+		font-size: 1rem;
+		background: #1e1e28;
+		color: rgba(255, 255, 255, 0.9);
+		text-shadow: 0 0.1em 0 #000;
+		background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiP…Igd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g);
+		background-size: 100%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+		background-repeat: repeat;
+		background-size: 20px 10px;
+		margin-top: 1px;
+	}
+}

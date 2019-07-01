@@ -1,0 +1,225 @@
+@media (max-width: 1023px) {
+    .delorian {
+        height: 89px;
+        width: 306px;
+        margin-top: 159px;
+        margin-left: 371px;
+
+    }
+
+    #building {
+        height: 200px;
+        width: 100%;
+        grid-area: 2/6/6/7;
+        justify-self: end;
+        margin-right: 20px;
+        text-align: center;
+
+    }
+
+    .sign-two {
+
+        margin-left: 588px;
+        margin-top: -44px;
+    }
+}
+
+
+
+
+@media (max-width: 734px) {
+    #michael {
+        margin-top: -110px;
+        background: #fff;
+        position: relative;
+        transform: scale(0.2);
+       transform: scale(0.5);
+        transform: scale(0.2);
+        left: -97px;
+    }
+
+    .delorian {
+        height: 69px;
+        width: 280px;
+        margin-top: 88px;
+        margin-left: 357px;
+    }
+
+    .vectro {
+        width: auto;
+        font-size: 67px;
+        margin-left: -8px;
+    }
+
+    #building {
+        height: 200px;
+        width: 700px;
+        grid-area: 2/6/6/7;
+        justify-self: end;
+        margin-right: 20px;
+        text-align: center;
+
+    }
+
+    .sign-two {
+
+        margin-left: 474px;
+        margin-top: -97px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 599px) {
+
+    body {
+        height: 100%;
+    }
+
+    .facet_sidebar {
+        display: none;
+    }
+
+    .delorian {
+        height: 62px;
+        width: 207px;
+        margin-top: 104px;
+        margin-left: 145px;
+        position: relative;
+    }
+
+    .vectro {
+        width: auto;
+        font-size: 65px;
+        margin-left: 20px;
+		text-align: center;
+    }
+
+    #building {
+        height: 50%;
+        width: 116%;
+        grid-area: 2/6/6/7;
+        justify-self: end;
+        margin-right: 20px;
+        text-align: center;
+
+    }
+
+    #michael {
+        margin-top: -110px;
+        background: #fff;
+        position: relative;
+        -ms-transform: scale(0.4);
+        -webkit-transform: scale(0.5);
+        transform: scale(0.2);
+        left: -97px;
+    }
+
+    .area {
+        text-align: center;
+        font-size: 1.5em;
+        color: #fff;
+        letter-spacing: -7px;
+        font-weight: 700;
+        text-transform: uppercase;
+        animation: blur .75s ease-out infinite;
+        text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+        margin-top: -78px;
+        margin-left: 198px;
+    }
+
+    .sign-two {
+
+        margin-left: 261px;
+        margin-top: -97px;
+    }
+
+    .jackpots {
+
+        margin-top: -71px;
+        margin-left: 0px;
+    }
+
+    .selectors {
+        grid-area: 2/3/6/7;
+        width: auto;
+        height: 77%;
+        display: grid;
+        font-size: 19px;
+        background-color: black;
+        margin-top: 27px;
+    }
+
+    #wrapper p {
+        margin-top: -1px;
+        font-size: 18px;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        color: #ff2595;
+        font-family: "Press Start 2P";
+    }
+
+    .selectors a {
+        padding: 12px;
+    }
+	h1.vectro{
+		display: flex;
+		font-size: 4em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+	}
+
+}
+
+
+@media (min-width: 1400px) {
+    body {
+        height: 100%;
+    }
+    img#delorian {
+    height: 123px;
+    width: 368px;
+    margin-top: 377px;
+    margin-left: 701px;
+    position: relative;
+}
+
+    img {
+    height: 580px;
+    width: -webkit-fill-available;
+    position: relative;
+}
+    .delorian {
+    height: 107px;
+    width: 368px;
+    margin-top: 94px;
+    margin-left: 849px;
+    position: relative;
+}
+    .sign-two {
+        
+        margin-left: 1263px;
+    margin-top: -371px;
+       position: relative;
+       
+    }
+    .jackpots {
+    font-family: moon;
+    font-size: 2.3vw;
+    margin-top: -342px;
+    margin-left: 66px;
+   position: relative;
+}
+}
+@media (max-height: 1600px){
+       body,html{
+        height: -webkit-fill-available;
+    }
+}
